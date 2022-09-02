@@ -1,0 +1,58 @@
+.comments
+    padding: 60px 0 160px 0
+    &__subtitle
+        display: block
+        margin-bottom: 30px
+    &-block
+        margin-bottom: 50px
+        display: flex
+        img
+            margin-right: 30px
+            height: 70px
+            width: auto
+        &__text
+            width: 100%
+            &_title
+                font-family: $playfair
+                font-size: 14px
+                font-weight: 600
+                color: #626262
+                margin-bottom: 10px
+            &_descr
+                margin-bottom: 25px
+            &_link
+                position: relative
+                transition: .4s
+                &::before
+                    content: ''
+                    position: absolute
+                    width: 100%
+                    bottom: -5px
+                    right: 0
+                    height: 2px
+                    background-color: #b4ad9e
+                    transition: .4s
+                    transform: scaleX(0)
+                &:hover
+                    color: #b4ad9e
+                    &::before
+                        transform: scaleX(1)
+            input
+                height: 70px
+                width: 100%
+                outline: none
+                border: 1px solid #b4ad9e
+                border-radius: 5px
+                padding: 0 30px
+                font-family: $ubuntu
+                font-weight: 300
+                font-size: 14px
+                color: #000
+                box-sizing: border-box
+                &::placeholder
+                    font-family: $ubuntu
+                    font-weight: 300
+                    font-size: 14px
+                    color: #b4ad9e
+                    
+            

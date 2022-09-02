@@ -1,0 +1,54 @@
+.footer
+    padding: 38px 0 
+    background-color: $grey
+    &-block
+        display: flex
+        justify-content: space-between
+    &__privacy
+        display: flex
+        align-items: center
+        a
+            position: relative
+            margin-right: 21px
+            font-family: $playfair
+            font-weight: 400
+            font-size: 14px
+            color: #000000
+            transition: .4s
+            &:last-child
+                margin-right: 0
+            &::before
+                content: ''
+                position: absolute
+                width: 100%
+                bottom: -5px
+                right: 0
+                height: 2px
+                background-color: #b4ad9e
+                transition: .4s
+                transform: scaleX(0)
+            &:hover
+                color: #626262
+                &::before
+                    transform: scaleX(1)
+    &__soc
+        display: flex
+        align-items: center
+        h3
+            margin-right: 20px
+            font-family: $playfair
+            font-weight: 400
+            font-size: 14px
+            color: #000000
+        i
+            margin-right: 18px
+            font-size: 18px
+            color: #000000
+            cursor: pointer
+            transition: .4s
+            &:last-child
+                margin-right: 0
+            &:hover
+                color: #626262
+                transition: .6s all
+                transform: scale(2) rotate(360deg)

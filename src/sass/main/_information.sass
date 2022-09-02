@@ -1,0 +1,38 @@
+.information
+    &-block
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+        &__box
+            width: 420px
+            margin-bottom: 115px
+            overflow: hidden
+            img
+                transition: .4s
+                width: 100%
+            &:hover
+                img
+                    transform: scale(1.1)
+                .information-block__title
+                    &::before
+                        transform: scaleX(1)
+        &__title
+            position: relative
+            transition: .4s
+            &:hover
+                color: #b4ad9e
+            &::before
+                content: ''
+                position: absolute
+                width: 100%
+                bottom: -5px
+                right: 0
+                height: 2px
+                background-color: #b4ad9e
+                transition: .4s
+                transform: scaleX(0)
+        &__subtitle
+            display: block
+            margin-top: 28px
+        &__text
+            margin-bottom: 0

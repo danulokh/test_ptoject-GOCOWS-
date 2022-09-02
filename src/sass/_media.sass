@@ -1,0 +1,102 @@
+@media (max-width:1199px)
+    .photodiary__article
+        width: 600px
+@media (max-width:991px)
+    .header-nav__list
+        width: 50%
+    .information-block
+        justify-content: center
+        &__box
+            width: 357px
+            &:nth-child(2n+1)
+                margin-right: 20px
+    .photodiary
+        padding: 80px 25px 115px 25px
+    .photodiary-main__block
+        justify-content: center
+        flex-direction: column
+        align-items: center
+    .photodiary__article
+        width: 100%
+        padding: 0
+        margin-bottom: 48px
+    .photodiary-sidepanel
+        position: static
+        width: 50%
+@media (max-width:767px)
+    .information-block
+        align-items: center
+        flex-direction: column
+        &__box
+            width: 60%
+            &:nth-child(2n+1)
+                margin-right: 0
+            img
+                width: 100%
+                height: auto
+    .photodiary-sidepanel
+        width: 340px
+    .like
+        &__title
+            margin: 28px 0 0 0
+        &__box
+            margin-bottom: 48px
+@media (max-width:575px)
+    .header-nav__list
+        display: flex
+        position: fixed
+        flex-direction: column
+        opacity: .8
+        width: 100%
+        left: -100%
+        top: 0
+        height: 100vh
+        background-color: #fff
+        z-index: 999
+        justify-content: center
+        transition: 1s all
+        li
+            margin-bottom: 30px
+            &:last-child
+                margin-bottom: 0
+        &_active
+            left: 0
+    .information-block__box
+        width: 100%
+    .newsletter__email
+        width: 100%
+        form
+            width: 100%
+    .newsletter__email form input
+        width: 100%
+    .newsletter__email form::after
+        right: -2px
+    .hamburger
+        display: flex
+    .newsletter
+        padding: 63px 15px
+    .footer
+        &-block
+            flex-direction: column
+        &__privacy
+            justify-content: center
+            margin-bottom: 20px
+        &__soc
+            justify-content: center
+    .photodiary
+        padding: 80px 0
+    .photodiary__title
+        font-size: 26px
+    .photodiary__text
+        font-size: 13px
+    .additional-inf
+        padding: 80px 0
+    .additional-inf__btn a
+        font-size: 17px
+    .photodiary__quote
+        padding: 0
+    .photodiary-sidepanel
+        width: 100%
+    .newsletter__title
+        font-size: 26px
+@media (max-width:320px)

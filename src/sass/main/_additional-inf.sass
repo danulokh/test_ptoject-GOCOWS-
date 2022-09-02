@@ -1,0 +1,27 @@
+.additional-inf
+    padding: 100px 0
+    &__btn
+        display: flex
+        justify-content: center
+        a
+            position: relative
+            font-family: $playfair
+            font-weight: 400
+            font-size: 20px
+            color: #626262
+            padding: 20px 32px
+            border: 1px solid #626262
+            transition: .5s
+            &::after
+                position: absolute
+                content: ""
+                top: 0
+                left: 0
+                width: 0
+                height: 100%
+                background: $grey
+                transition: all .35s
+                z-index: -1
+            &:hover
+                &::after
+                    width: 100%
