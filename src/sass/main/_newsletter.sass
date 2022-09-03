@@ -14,24 +14,29 @@
         justify-content: center
         form
             position: relative
-            &::after
-                content: ''
-                top: 50%
-                transform: translateY(-50%)
-                width: 40px
-                height: 20px
-                position: absolute
-                right: 0
-                display: block
-                background: url('../../icons/icon_newsletter.png')
-                cursor: pointer
-                padding-right: 40px
-                box-sizing: border-box 
-            input
-                height: 35px
-                width: 400px
-                border: none
-                border-bottom: 1px solid
-                outline: none
-                background: transparent
+        &_text
+            height: 35px
+            width: 400px
+            border: none
+            border-bottom: 1px solid
+            outline: none
+            background: transparent
+            transition: .4s all
+            &:focus
+                filter: drop-shadow(8px 8px 10px gray)
+        &_submit
+            top: 50%
+            transform: translateY(-50%)
+            width: 40px
+            height: 20px
+            position: absolute
+            right: -10px
+            display: block
+            background: url('../icons/icon_newsletter.png') no-repeat
+            cursor: pointer
+            padding-right: 40px
+            box-sizing: border-box
+            border: none
+
+                
             

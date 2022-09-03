@@ -1,4 +1,6 @@
 .information
+    &-main__title
+        margin: 28px 0
     &-block
         display: flex
         flex-wrap: wrap
@@ -7,20 +9,21 @@
             width: 420px
             margin-bottom: 115px
             overflow: hidden
-            img
-                transition: .4s
-                width: 100%
-            &:hover
+        &__link
+            &_img
+                display: block
+                overflow: hidden
                 img
-                    transform: scale(1.1)
-                .information-block__title
-                    &::before
-                        transform: scaleX(1)
+                    transition: .4s
+                    width: 100%
+                &:hover
+                    img
+                        transform: scale(1.1)
         &__title
             position: relative
             transition: .4s
-            &:hover
-                color: #b4ad9e
+            display: inline-block
+            margin: 0
             &::before
                 content: ''
                 position: absolute
@@ -31,6 +34,11 @@
                 background-color: #b4ad9e
                 transition: .4s
                 transform: scaleX(0)
+            &:hover
+                color: #b4ad9e
+                &::before
+                    transform: scaleX(1)
+                    
         &__subtitle
             display: block
             margin-top: 28px

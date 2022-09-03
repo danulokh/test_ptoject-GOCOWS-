@@ -8,5 +8,6 @@ const hamburger = document.querySelector('.hamburger')
 
 hamburger.addEventListener('click', () => {
   hamburger.classList.toggle('hamburger_active');
-  menu.classList.toggle('header-nav__list_active')
+  menu.classList.toggle('header-nav__list_active');
+  document.body.classList.toggle('scroll-close');
 });

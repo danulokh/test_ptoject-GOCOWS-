@@ -29,7 +29,7 @@
         font-size: 14px
         color: #626262
         margin-bottom: 48px
-        span
+        b
             font-weight: 700
     &__comment
         position: relative
@@ -68,18 +68,19 @@
         &__block
             display: flex
             justify-content: flex-end
-            i
-                font-size: 18px
-                color: #B4AD9E
+            a
                 margin-right: 15px
-                cursor: pointer
-                transition: .4s
-                &:last-child
-                    margin-right: 0
+                i
+                    font-size: 18px
+                    color: #B4AD9E
+                    transition: .4s
                 &:hover
-                    color: #626262
-                    transition: .6s all
-                    transform: scale(2) rotate(360deg)
+                    i
+                        color: #626262
+                        transition: .6s all
+                        transform: scale(2) rotate(360deg)
+                &:last-child
+                        margin-right: 0
             i.photodiary__black
                 font-size: 18px
                 color: #000
@@ -120,18 +121,20 @@
             margin-bottom: 20px
         &__soc
             margin-bottom: 70px
-            i
-                font-size: 18px
-                color: #B4AD9E
+            a
                 margin-right: 15px
-                cursor: pointer
-                transition: .4s
+                i
+                    font-size: 18px
+                    color: #B4AD9E
+                    transition: .4s
+                    
+                &:hover
+                    i
+                        color: #626262
+                        transition: .6s all
+                        transform: scale(2) rotate(360deg)
                 &:last-child
                     margin-right: 0
-                &:hover
-                    color: #626262
-                    transition: .6s all
-                    transform: scale(2) rotate(360deg)
         &__subtitle
             margin-bottom: 30px
         &__list
